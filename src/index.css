@@ -1,0 +1,29 @@
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+*::-webkit-scrollbar{
+  width: 12px;
+
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: rgb(19, 18, 18,0.4);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:active{
+    background-color: rgb(19, 18, 18,0.8);
+}
+
+body{
+  background-color: #242424;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

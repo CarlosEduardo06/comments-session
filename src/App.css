@@ -1,0 +1,94 @@
+.container-card{
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+  box-shadow: -3px 6px 38px -10px rgba(0,0,0,0.79);
+  padding: 3rem 4rem;
+  overflow-y:auto;
+}
+
+.container-card .form-comment-card{
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.container-card .form-comment-card input,textarea{
+  resize: none;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  background-color: rgb(39, 38, 38);
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  filter: brightness(1.1);
+  transition: .2s;
+
+}
+
+.container-card .form-comment-card input,textarea:hover{
+  filter: brightness(1.2);
+}
+
+.container-card .form-comment-card input[type="submit"]{
+  cursor: pointer;
+}
+
+.container-card .form-comment-card input[type="submit"]:active{
+  transform: scale(0.95);
+}
+
+.container-card .form-comment-card .text-area-form-input-box{
+  position: relative;
+}
+
+.container-card .form-comment-card textarea{
+  height: 130px;
+}
+
+.container-card .box-comment{
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgb(39, 38, 38);
+  filter: brightness(1.1);
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.container-card .box-comment span, h5{
+  top: -10px;
+  position: absolute;
+  font-size: 0.8rem;
+  color: rgb(248, 49, 49);
+}
+.container-card .box-comment span{
+  right: 0;
+}
+.container-card .box-comment h5{
+  left: 0;
+}
+.container-card .box-comment p{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 0.8rem;
+  text-align: start;
+  line-height: .95rem;
+}
+
+#max-length-text-area{
+  z-index: 1;
+  font-size: 0.8rem;
+  position: absolute;
+  right: -15px;
+
+  bottom: 30px;
+  transform: rotateZ(-50deg);
+  color: red;
+  cursor: default;
+}
