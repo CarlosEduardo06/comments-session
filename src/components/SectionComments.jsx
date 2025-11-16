@@ -1,7 +1,6 @@
 import Comment from "./comment"
 
-export default ({comments}) => {
-    console.log(comments)
+export default ({comments,removeComment}) => {
     return (
         <div>
             {
@@ -10,10 +9,12 @@ export default ({comments}) => {
                 (
                     comments.map(element => {
                         return <Comment 
+                            removeComment={removeComment}
                             comment={element.comment}  
                             date={element.date}
                             email={element.email}
                             key={element.id}
+                            id={element.id}
                         />
                     })
     

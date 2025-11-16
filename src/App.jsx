@@ -6,12 +6,11 @@ import useCommentsCollection from "./hooks/useCommentsCollection.js";
 
 
 export default () => {
-  const {comments,addComment} = useCommentsCollection();
-
+  const {comments, addComment, removeComment} = useCommentsCollection();
   return (
       <CardComment>
         <FormComment addComment={addComment} ></FormComment>
-        <SectionComments comments={comments}></SectionComments>
+        <SectionComments comments={comments} removeComment={removeComment}></SectionComments>
       </CardComment>
   )
 }

@@ -21,14 +21,22 @@ export default () => {
             
         }
 
-        console.log(newComment)
+        console.log(newComment);
 
         setComments(currentState => {
-            const newComments = [...currentState,newComment] 
-            localStorage.setItem(localStorageComments, JSON.stringify(newComments))
-            return newComments
+            const newComments = [...currentState,newComment] ;
+            localStorage.setItem(localStorageComments, JSON.stringify(newComments));
+            return newComments;
         })
     }
 
-    return {comments,addComment}
+    const removeComment = (id) => {
+        setComments(currentState => {
+            const newState = currentState.filter(comment => comment.id !== id);
+            localStorage.setItem(localStorageComments, JSON.stringify(newState));
+            return newState;
+        })
+    }
+
+    return {comments,addComment, removeComment}
 }
